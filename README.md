@@ -1,1 +1,8 @@
-This file serves as an introduction to your Knowledge Base, it is displayed on the homepage of your website. Use it to provide more context to your visitors.
+# PostgreSQL 常見問題
+
+整理一些比較零碎的 PostgreSQL 資訊，可以快問快答的資訊。
+
+想問什麼就寄信來吧！
+
+[docs@postgresql.tw](mailto:docs@postgresql.tw)
+
