@@ -1,0 +1,14 @@
+# 誰控制著 PostgreSQL？[^1]
+
+如果你正在尋找一個 PostgreSQL 的守衛，中央委員會或控股公司，請放棄吧 --- 完全不存在。
+
+我們確實有一個核心委員會和 git 提交者，但是這些組織更多是為了管理目的而不是控制。
+
+這個專案由開發者和使用者社群所引導，並且任何人都可以加入社群。你只需訂閱郵件列表並參與討論即可。
+
+（請參閱[開發者常見問題](https://wiki.postgresql.org/wiki/Developer_FAQ)，可以得到如何加入 PostgreSQL 開發的資訊。）
+
+---
+
+[^1]:  [FAQ - PostgreSQL wiki](https://wiki.postgresql.org/wiki/FAQ#Who_controls_PostgreSQL.3F)
+
