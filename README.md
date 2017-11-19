@@ -6,5 +6,5 @@
 
 [docs@postgresql.tw](mailto:docs@postgresql.tw)
 
-[![](https://img.shields.io/badge/%E6%AD%A3%E9%AB%94%E4%B8%AD%E6%96%87%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8A-PostgreSQL.TW-blue.svg)](https://docs.postgresql.tw)[![](https://img.shields.io/badge/%E5%8F%B0%E7%81%A3%E4%BD%BF%E7%94%A8%E8%80%85%E7%A4%BE%E7%BE%A4-PostgreSQL-blue.svg)](https://docs.postgresql.tw/)
+[![](https://img.shields.io/badge/正體中文使用手冊-PostgreSQL.TW-blue.svg)](https://docs.postgresql.tw)　[![](https://img.shields.io/badge/台灣使用者社群-PostgreSQL-blue.svg)](https://docs.postgresql.tw/)
 
