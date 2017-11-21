@@ -30,19 +30,19 @@ PostgreSQL 和 MySQL 之間有一些根本上的差別。 你只有在評估兩�
 
 ### **Open Source** {#open-source}
 
-Open source software has unique benefits—cost, flexibility, freedom, security, and accountability—that are unsurpassed by proprietary software solutions. Open source software is**freely available**and may be redistributed and modified by anyone. Open source software has long-term viability and is always on the**cutting-edge of technology**. It's created and supported by a worldwide community of organizations and individual developers, many of whom also live by open source values such collaboration and volunteerism.
+開源軟體具有一些獨特的優勢—成本，靈活性，自由，安全性和問責性—這是商有軟體解決方案所無法比擬的。開源軟體是免費的，而且可以被任何人重新散佈和修改。開源軟體具有長期的生存能力，始終處於技術的領導位置。它由一個由全球性組織和個人開發者組成的社區所建立和支持，他們中的許多人也靠開放原始碼的價值來生活，像是一些協作和志願服務。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL is developed by the PostgreSQL Global Development Group, a diverse group of multiple companies and individual contributors. It’s free and open-source software. PostgreSQL is released under the PostgreSQL license, a liberal Open Source license, similar to the BSD or MIT licenses. | The MySQL development project has made its source code available under the terms of the GNU General Public License, as well as a variety of proprietary agreements.It’s now owned by Oracle Corporation and offers several paid editions for proprietary use. |
+| PostgreSQL 由 PostgreSQL 全球開發小組（PostgreSQL Global Development Group）開發，PostgreSQL 全球開發組由多個公司和個人貢獻者所組成。它是免費的開源軟體。PostgreSQL 是在 PostgreSQL 使用許可發布的，這是一個自由的開源許可，類似於 BSD 或 MIT 使用許可。 | MySQL 開發專案根據 GNU GPL 的條款提供了它的原始碼以及各種各樣的專有協議。它現在由 Oracle 公司擁有，並且提供了幾個商業使用的付費版本。 |
 
 ### **ACID Compliance**
 
-ACID \(Atomicity, Consistency, Isolation, Durability\) is a set of properties of database transactions. The ACID compliance ensures that**no data is lost or miscommunicated**across the system in case of failure, even when there are multiple changes made during a single transaction.
+ACID（Atomicity，Consistency，Isolation，Durability）是一組資料庫交易安全的特性。 ACID 要求確保在單一的資料交易中發生多個更新時也不會在整個系統中遺失數據或發生錯誤。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL is ACID compliant from ground up and ensures that all requirements are met. | MySQL is only ACID compliant when using InnoDB and NDB Cluster Storage engines. |
+| PostgreSQL 完全符合 ACID 特性，並確保滿足所有要求。 | 只有在使用 InnoDB 和 NDB 叢集儲存引擎時，MySQL 才符合ACID 標準。 |
 
 ### **SQL Compliance**
 
