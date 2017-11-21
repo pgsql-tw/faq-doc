@@ -2,7 +2,7 @@
 
 在考慮使用哪個資料庫時，不要認為所有的開源資料庫系統都是一樣的！
 
-![](https://www.2ndquadrant.com/media/filer_public_thumbnails/filer_public/ba/ad/baad1700-7359-4a1e-9efc-97b63949f21b/2ndquadrant_postgresqlvmysql_display.png__650x211_q85_subsampling-2.png)
+![](/assets/postgresql-vs-mysql.png)
 
 There are radical differences between PostgreSQL and MySQL. An informed decision must be made after evaluating the differences and trade-offs between the two systems.
 
