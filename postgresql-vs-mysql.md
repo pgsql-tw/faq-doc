@@ -4,31 +4,31 @@
 
 ![](/assets/postgresql-vs-mysql.png)
 
-There are radical differences between PostgreSQL and MySQL. An informed decision must be made after evaluating the differences and trade-offs between the two systems.
+PostgreSQL 和 MySQL 之間有一些根本上的差別。 你只有在評估兩個系統之間的差異和取捨之後，才做出明智的決定。
 
-We've provided a summary of similarities and differences of the most commonly evaluated features and abilities between PostgreSQL and MySQL :
+我們提供了PostgreSQL和MySQL之間最常見的特性和能力的相似點和不同點的總結：
 
-* [Open Source](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#OPEN_SOURCE)
-* [Acid Compliance](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#ACID_COMPLIANCE)
-* [SQL Compliance](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#SQL_COMPLIANCE)
-* [Replication](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#REPLICATION)
-* [Performance](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#PERFORMANCE)
-* [Security](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#SECURITY)
-* [Hosting](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#HOSTING)
-* [Community Support](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#COMMUNITY_SUPPORT)
-* [Concurrency Support](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#CONCURRENCY_SUPPORT)
-* [NoSQL/JSON Support](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#NOSQL_JSON_SUPPORT)
-* [Materialized Views & Temporary Tables](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#MATERIALIZED_VIEWS_TABLES)
-* [GeoSpatial Data Support](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#GEOSPATIAL_DATA)
-* [Programming Languages Support](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#PROGRAMMING_LANGUAGES)
-* [Extensible Type System](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#EXTENSIBLE_TYPE_SYSTEM)
-* [Comparison Summary](https://www.2ndquadrant.com/en/postgresql/postgresql-vs-mysql/#SUMMARY)
+* [Open Source](#open-source)
+* [Acid Compliance](#acid-compliance)
+* [SQL Compliance](#sql-compliance)
+* [Replication](#replication)
+* [Performance](#performance)
+* [Security](#security)
+* [Cloud Hosting](#cloud-hosting)
+* [Community Support](#community-support)
+* [Concurrency Support](#concurrency-support)
+* [NoSQL/JSON Support](#nosql-featuresjson-support)
+* [Materialized Views & Temporary Tables](#materialized-viewstemporary-tables)
+* [GeoSpatial Data Support](#geospatial-data-support)
+* [Programming Languages Support](#programming-languages-support)
+* [Extensible Type System](#extensible-type-system)
+* [Comparison Summary](#comparison-summary)
 
-While there are many similarities and overlaps between the two databases there are also very distinct differences. We've tried to provide you with a fair and accurate comparison between the two, but in the end it is necessary to evaluate your unique scenario and determine which database is best suitable for your specific use-case.
+雖然兩個資料庫之間有許多相似之處和重疊，但也有非常明顯的差異。 我們試圖為你提供兩者之間的公平和準確的比較，但最終仍然有必要評估你的獨特使用情境，再確定哪個資料庫最適合你的特定使用情況。
 
-Obviously, we’re rooting for PostgreSQL, but it is possible there are some scenarios in which MySQL best benefits the end-user.
+很顯然，我們是以 PostgreSQL 為主，但也有可能出現一些對使用者最有利的 MySQL 方案。
 
-### **Open Source**
+### **Open Source** {#open-source}
 
 Open source software has unique benefits—cost, flexibility, freedom, security, and accountability—that are unsurpassed by proprietary software solutions. Open source software is**freely available**and may be redistributed and modified by anyone. Open source software has long-term viability and is always on the**cutting-edge of technology**. It's created and supported by a worldwide community of organizations and individual developers, many of whom also live by open source values such collaboration and volunteerism.
 
