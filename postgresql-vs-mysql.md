@@ -46,13 +46,13 @@ ACID（Atomicity，Consistency，Isolation，Durability）是一組資料庫交�
 
 ### **SQL Compliance**
 
-SQL compliance is a standard that a database must meet and implements all the structured query language guidelines and standards. This is very important when companies want to work with heterogeneous databases for an application.
+SQL 相容性是資料庫必須滿足並實現所有結構化查詢語言準則和標準。 當公司想要為應用程式使用多種同類型資料庫時，這一點非常重要。
 
-Having SQL compliance makes it very easy to move data from one SQL compliant database to another \(ex. Oracle to PostgreSQL or SQL Server\).
+具有 SQL 相容性使得將資料從一個 SQL 相容的資料庫移動到另一個時（例如 Oracle 到 PostgreSQL 或 SQL Server）非常容易。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL is largely SQL compliant. The level of conformance for each feature is clearly laid out in Appendix D of the manual, and any deviations are clearly documented in the “Reference” section of the PostgreSQL manual.[ Extracted from documentation](https://www.postgresql.org/docs/9.6/static/features.html):_PostgreSQL supports most of the major features of SQL:2011. Out of 179 mandatory features required for full Core conformance, PostgreSQL conforms to at least 160. In addition, there is a long list of supported optional features. It might be worth noting that at the time of writing, no current version of any database management system claims full conformance to Core SQL:2011._ | MySQL is partially compliant on some of the versions \(e.g does not support CHECK constraints\).[ Extracted from documentation](https://dev.mysql.com/doc/refman/5.7/en/compatibility.html):_One of our main goals with the product is to continue to work toward compliance with the SQL standard, but without sacrificing speed or reliability. We are not afraid to add extensions to SQL or support for non-SQL features if this greatly increases the usability of MySQL Server for a large segment of our user base._ |
+| PostgreSQL在很大程度上是SQL相容的。 使用手冊的附錄D清楚地列出了每個功能的相容性情形，PostgreSQL手冊的“Reference”章節清楚地記錄了任何差異。 從文件中摘錄：PostgreSQL支持SQL：2011的大部分主要功能。 在滿足核心一致性所需的179個必要功能中，PostgreSQL至少符合160個。此外，還有一大串支持的可選功能。 值得注意的是，在撰寫本文時，沒有任何資料庫管理系統的當時版本聲明完全符合Core SQL：2011。 | MySQL對 SQL 相容較少的（例如不支持 CHECK 約束）。 從官方文冊中摘錄：我們的產品主要目標之一是繼續努力遵守 SQL 標準，但不會犧牲速度或可靠性。 如果這大大增加了我們用戶群中的大部分MySQL服務器的可用性，我們並不害怕增加 SQL 延伸功能或支持非 SQL 功能。 |
 
 ### Replication
 
