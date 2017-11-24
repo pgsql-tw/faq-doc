@@ -56,11 +56,11 @@ SQL 相容性是資料庫必須滿足並實現所有結構化查詢語言準則�
 
 ### Replication
 
-Database replication is the frequent electronic copying of data from a database in one computer or server to a database in another so that all users share the same level of information. The result is a**distributed database**in which users can access data relevant to their tasks without interfering with the work of others.
+資料庫複製是從一台主機或伺服器上的資料庫到另一台資料庫中資料的頻繁電子複製，以便所有資料庫服務提供一致性的資訊。其結果是一個分散式資料庫，使用者可以在其中存取與其事務相關的資料，而不會干擾他人的作業。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL supports Master-Standby replication and introduced significant enhancements producing extremely fast WAL processing that results in almost real-time replication and hot standby capabilities for standby servers.Replications offered by PostgreSQL:Single master to one standbySingle master to multiple standbysHot Standby/Streaming ReplicationBi-Directional replicationLogical log streaming replicationCascading replication | MySQL supports Master-Standby replication.Replications offered by MySQL:Single master to one standbySingle master to multiple standbysSingle master to one standby to one or more standbysCircular replication \(A to B to C and back to A\)Master to master |
+| PostgreSQL 支援 Master-Standby 複製，並引入了先進的強化功能，提供極其快速的 WAL 處理，為備用伺服器提供了近乎即時的複製和熱備援功能。PostgreSQL 提供的功能：單主機到一個備用單主機（Single master to one standby）／多個備用主機（multiple standby）、雙向複製（Bi-Directional replication）、邏輯日誌串流複製（Logical log streaming replication）、及多層次複製（Cascading replication） | MySQL 支持 Master-Standby 複製。MySQL提供的備份：單一主機到一個備用主機（Single master to one standby）／單主機到多個備用主機（Single master to multiple standbys）、單主機到一個或多個備用主機（Single master to one standby to one or more standbys）、循環式備援（Circular replication）（ A 到 B到 C 和回到 A）、主要主機對主要主機（Master to master） |
 
 ### Performance
 
