@@ -72,11 +72,11 @@ SQL 相容性是資料庫必須滿足並實現所有結構化查詢語言準則�
 
 ### Security
 
-Database security refers to the collective measures used to**protect and secure a database or dbms**from illegitimate use, malicious threats, and attacks. It is a broad term that includes a multitude of processes, tools, and methodologies that**ensure security**within a database environment.
+資料庫安全性指的是用於保護資料庫或DBMS免於非法使用、惡意威脅和攻擊的綜合措施。這是一個廣泛的術語，包括確保資料庫環境中安全性的多種程序、工具和方法。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL has ROLES and inherited roles to set and maintain permissions. PostgreSQL has native SSL support for connections to encrypt client/server communications. It also has Row Level Security.In addition to this, PostgreSQL comes with a built-in enhancement called SE-PostgreSQL which provides additional access controls based on SELinux security policy. More details[here](https://wiki.postgresql.org/wiki/SEPostgreSQL_Introduction). | MySQL implements security based on Access Control Lists \(ACLs\) for all connections, queries, and other operations that a user may attempt to perform. There is also some support for SSL-encrypted connections between MySQL clients and servers. |
+| PostgreSQL 具有角色並可繼承角色來設定和維護權限。 PostgreSQL 內建支援 SSL連線來加密客戶端/伺服器通訊。 它具有資料列級的安全性。除此之外，PostgreSQL 還附帶了一個名為 SE-PostgreSQL 的增強功能，可以根據 SELinux 安全策略提供額外的存取控制。更多細節請參考[這裡](https://wiki.postgresql.org/wiki/SEPostgreSQL_Introduction)。. | MySQL 為所有連線、查詢和用戶可能嘗試執行的其他操作實作了存取控制列表（ACL）的安全性。 對 MySQL 客戶端和伺服器之間的 SSL 加密連接也有支援。 |
 
 ### Cloud Hosting
 
