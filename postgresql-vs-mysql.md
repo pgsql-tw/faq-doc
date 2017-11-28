@@ -80,11 +80,11 @@ SQL 相容性是資料庫必須滿足並實現所有結構化查詢語言準則�
 
 ### Cloud Hosting
 
-As more and more enterprises opt to shift their data into the cloud, the ability to find cloud providers that support your database becomes increasingly important. Cloud hosting allows elasticity of the servers, allowing you to expand or contract their capacity quickly. It also allows for reducing potential downtime while easily managing peak workloads.
+隨著越來越多的企業選擇將資料轉移到公有雲中，尋找支援資料庫的公有雲服務商變得越來越重要。雲端主機允許伺服器的彈性擴展，使你能夠迅速擴大或縮小其容量。它還可以減少潛在的停機時間，同時輕鬆管理尖峰負載。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| Supported by all major cloud service providers, including Amazon, Google, & Microsoft. | Supported by all major cloud service providers, including Amazon, Google, & Microsoft. |
+| 所有主要雲端服務提供商都支持，包括亞馬遜、谷歌和微軟。 | 所有主要雲端服務提供商都支持，包括亞馬遜、谷歌和微軟。 |
 
 ### Community Support
 
