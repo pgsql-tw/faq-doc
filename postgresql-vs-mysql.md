@@ -90,7 +90,7 @@ SQL 相容性是資料庫必須滿足並實現所有結構化查詢語言準則�
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL has a very strong and active community that constantly improves existing features while its innovative committers strive to ensure it remains the most advanced database with new cutting-edge features and security. | MySQL has a large community of contributors who, particularly following the acquisition by Oracle, focus mainly on maintaining existing features with some new features emerging occasionally. |
+| PostgreSQL 擁有非常強大且活躍的社區，不斷改進現有功能，同時創新的提交者努力確保它保持在最先進的功能和安全性的最先進的數據庫。 | MySQL 擁有大量的貢獻者社區，特別是在甲骨文收購之後，他們主要關注於維護現有功能，並偶爾會出現一些新功能。 |
 
 ### Concurrency Support
 
