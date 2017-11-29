@@ -94,19 +94,19 @@ SQL 相容性是資料庫必須滿足並實現所有結構化查詢語言準則�
 
 ### Concurrency Support
 
-Concurrency means that multiple users can have access to the data at the same time. It is one of the core features considered when developing a system that requires multiple subscribers to access data at the same time because it enhances the ability for many people to access and use the database in multiple locations simultaneously.
+Concurrency 意味著多個使用者可以同時存取資料。在開發需要多個使用者同時存取資料的系統時，這是核心功能之一，因為它增強了許多人同時在多個來源存取和使用資料庫的能力。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL tackles concurrency efficiently with its MVCC implementation, which achieves very high levels of concurrency. | MySQL only has MVCC support in InnoDB. |
+| PostgreSQL 透過實作 MVCC 來有效地處理同時間平行存取，從而達到非常高的平行處理等級。 | MySQL 只在使用 InnoDB 時支援 MVCC。 |
 
 ### NoSQL Features/JSON Support
 
-NoSQL and JSON are both very popular and NoSQL databases are becoming more common. JSON is a simple data format that allows programmers to store and communicate sets of values, lists, and key-value mappings across systems.
+NoSQL 和 JSON 都非常流行，NoSQL資料庫變得越來越普及。JSON 是一種簡單的資料格式，它允許程式設計師儲存和傳遞跨系統的資料內容、資料列表和 key-value 對應。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL supports JSON and other NoSQL features like native XML support and key-value pairs with HSTORE. It also supports indexing JSON data for faster access. | MySQL has JSON data type support but no other NoSQL feature. It does not support indexing for JSON. |
+| PostgreSQL 支援 JSON 和其他 NoSQL 的功能，如內建 XML 支援和 HSTORE 的 key-value 對應。 它還支援將 JSON 資料索引以加快存取速度。 | MySQL 具有 JSON 資料類型支援，但沒有其他 NoSQL功能，也不支援 JSON 索引。 |
 
 ### Materialized Views/Temporary Tables
 
