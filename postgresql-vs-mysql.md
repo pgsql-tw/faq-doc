@@ -136,15 +136,15 @@ Programming languages support helps a wide range of developers to perform severa
 
 ### Extensible Type System
 
-A database supporting extensible type system can be extended by the user in many ways such as adding new data types, functions, operators, aggregate functions, index methods, and procedural languages.
+支援可延伸套件系統的資料庫可以通過多種方式進行強化其功能，如增加新的資料類型、函數、運算符、彙總函數、索引方法和程式語言。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL has several features dedicated to extensibility. It is possible to add new types, new functions, new index types, etc. | No support for extensibility. |
+| PostgreSQL有幾個專用於延伸套件的功能。 可以增加新的資料型別、新的函數功能、新的索引類型等。 | 不支援增加延伸功能。 |
 
 ### Comparison Summary
 
-Below is a summarized comparison chart of PostgreSQL vs MySQL:
+以下是 PostgreSQL 與 MySQL 的簡要比較表：
 
 | Feature | PostgreSQL | MySQL |
 | :--- | :--- | :--- |
