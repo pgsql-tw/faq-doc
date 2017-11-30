@@ -132,7 +132,7 @@ Programming languages support helps a wide range of developers to perform severa
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL supports a wide variety of programing languages including: C/C++, Java, JavaScript, .Net, R, Perl, Python, Ruby, Tcl and others; it’s even possible to run user-supplied code in separate processes \(i.e. running as background workers\). | Some support for server side programming in a single language which is not extensible. |
+| PostgreSQL 支援各種程式語言，包括：C / C ++，Java，JavaScript，.Net，R，Perl，Python，Ruby，Tcl 等等。 甚至可以在單獨的程序中執行用戶提供的程式（即作為背景執行程式）。 | 一些支援伺服器端不可擴展的程式語言。 |
 
 ### Extensible Type System
 
