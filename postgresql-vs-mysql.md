@@ -110,13 +110,13 @@ NoSQL 和 JSON 都非常流行，NoSQL資料庫變得越來越普及。JSON 是�
 
 ### Materialized Views/Temporary Tables
 
-A materialized view is a database object that contains the results of a query which can be updated as needed from the original base table. It can be thought of like a ‘cache’ for databases.
+Materialized view 是包含查詢結果的資料庫物件，可根據需要從原始資料表中更新查詢結果。它可以被認為是像資料庫的「快取」。
 
-A temporary table stores data not required to persist beyond the life of the session that creates it. The main way it differs from a Materialized View is that the latter provides the ability to periodically update the data, resulting in better efficiency for that use case.
+臨時資料表儲存的資料不需要超出資料庫連線的持續時間。與 materialized view 不同的主要方式是後者提供了定期更新資料的能力，從而提高了該資料案例的使用效率。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| Supports materialized views and temporary tables. | Supports temporary tables but does not support materialized views. |
+| 支援 materialized views 及 temporary tables。 | 支援 temporary tables 但不支援 materialized views。 |
 
 ### Geospatial Data Support
 
