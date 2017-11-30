@@ -120,11 +120,11 @@ Materialized view 是包含查詢結果的資料庫物件，可根據需要從�
 
 ### Geospatial Data Support
 
-Geospatial data is all the geographic data points that a database keeps and can provide for analysis. It is the information about a physical object that can be represented by numerical values in a geographic coordinate system.
+地理資訊資料是資料庫儲存並可用於分析的所有地理位置資訊。它是關於實體物件的訊息，可以用地理坐標系中的數值表示。
 
 | PostgreSQL | MySQL |
 | :--- | :--- |
-| PostgreSQL supports Geospatial data via the PostGIS extension. There are dedicated types and functions for geospatial data, available directly at database level, making analysis and coding easier for developers. | Geospatial data support is built in. |
+| PostgreSQL 通過 PostGIS 延伸套件支持地理空間資料。 地理空間資料有專門的類型和功能，可直接在資料庫級別使用，使開發人員可以更輕鬆地進行分析和撰寫程式。 | 內建地理空間資料支援。 |
 
 ### Programming Languages Support
 
