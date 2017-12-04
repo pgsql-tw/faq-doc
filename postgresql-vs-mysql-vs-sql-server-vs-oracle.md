@@ -1,10 +1,10 @@
 # PostGRESQL vs MySQL vs SQL Server vs Oracle：哪個資料庫是你的最佳選擇？[^1]
 
-There’s always been some contention over which SQL database tool is superior. What’s the real difference between PostGRESQL vs MySQL and more? Every administrator has their preferences, and every programmer has their own unique way of dealing with code. For that reason, if you ask five different sysadmins which platform they prefer, you’re like to receive five different answers.
+對於哪個 SQL 資料庫系統比較優秀，總是存在著爭議。PostgreSQL 和 MySQL 之間的真正區別是什麼？每個管理者都有自己的偏好，每個程式設計師都有自己獨特的程式處理方式。因此，如果您詢問五個不同的系統管理員，他們更喜歡哪個平台，那麼你會得到五個不同的答案。
 
-Let’s see if we can’t help you come to your own answer.
+讓我們來看看我們是否能幫助你自己回答。
 
-Today, we’re going to look at some of the major database management systems currently available on the web in regards to their pros and cons. Once we’ve worked that part out, we’ll offer up a few recommendations as to which projects each one is best-suited for. Let’s dive right in.
+今天，我們將看看目前網路上可用的一些主要資料庫管理系統的優缺點。一旦我們完成了這一部分，我們將提供一些建議，以確定每個項目最適合哪個項目。讓我們直接來看看：
 
 ## Oracle
 
@@ -51,8 +51,6 @@ Today, we’re going to look at some of the major database management systems cu
 * Schema changes do not lock tables.
 * Relatively high resource footprint
 
-
-
 ## DB2
 
 * Closed-source. Enterprise version only available for a price
@@ -98,8 +96,6 @@ As you can no doubt tell, each of the database tools we’ve profiled here is va
 * 你正在計劃建立一個唯讀的網路應用程式或網站
 * 你需要多重的資料複製
 * 你的專案只需要簡單的查詢，並且較少處理資料一致性的問題
-
-
 
 ### You should use MS SQL Server if…
 
