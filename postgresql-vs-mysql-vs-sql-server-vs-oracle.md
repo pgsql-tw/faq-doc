@@ -8,13 +8,13 @@
 
 ## Oracle
 
-* Closed-source; free version has very limited feature set
-* Temporary tables persist across sessions, and must be removed by the user
-* Support for four different character/string types: CHAR, VARCHAR2, NCHAR, NVARCHAR2
-* Offers both table and row locking
-* Extensive and flexible storage customization with commands like tablespace, synonym, and packages
-* Extensive backup mechanisms
-* Designed to manage tables and databases on a large-scale basis
+* 閉源軟體；免費版本的功能非常有限
+* 暫時資料表在不同連線間是持續存在的，必須由使用者自行刪除
+* 支援四種不同的字元/字串類型：CHAR，VARCHAR2，NCHAR，NVARCHAR2
+* 提供資料表和資料列層級的鎖定
+* 廣泛和靈活的指令來自訂儲存引擎，像是資料表空間（tablespace）、同義詞（synonym）和套件（package）
+* 廣泛的備份機制
+* 設計目標在於管理大規模的資料表和資料庫
 
 ## MySQL
 
