@@ -10,4 +10,5 @@
 * [什麼是 PostgreSQL 的使用許可（License）呢？](what-is-the-license-of-postgresql.md)
 * [PostgreSQL vs MySQL](postgresql-vs-mysql.md)
 * [PostgreSQL vs MySQL vs SQL Server vs Oracle](postgresql-vs-mysql-vs-sql-server-vs-oracle.md)
+* [9 Reasons Why There Are No Foreign Keys in Your Database \(Referential Integrity Checks\)](9-reasons-why-there-are-no-foreign-keys-in-your-database-referential-integrity-checks.md)
 
