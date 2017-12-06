@@ -18,24 +18,24 @@
 
 ## MySQL
 
-* Open-source
-* Compatible with a wide range of engines and interfaces; one of the most mature databases on the market
-* Lightweight
-* One of the most popular database tools; easy to find support online
-* Temporary tables are only visible within the current active session, and are removed automatically afterwards.
-* Lacks ACID compliance
-* Can partition tables via LIST, HASH, RANGE, and SET
-* Support for two different character/string types: CHAR and VARCHAR
-* Offers only table locking
-* Lacks options for table views
-* Limited storage customization
-* Admin tools are incredibly powerful
-* Two backup mechanisms: mysqlhotcopy and mysqldump
-* Experiences significant performance degradation at high scale.
-* Provides little in the way of performance optimization
-* Issues with reliability
-* Limited security compared to some other database systems.
-* Designed for transactional workloads, and as such is ill-suited for analytical workloads
+* 開放原始碼
+* 相容於各式各樣的引擎和介面；這是市場上最成熟的資料庫之一
+* 輕量化
+* 最流行的資料庫工具之一；很容易在網路上找到支援的資訊
+* 暫時資料表只在目前資料庫連線中可以被看見，並在離線之後自動刪除。
+* 缺乏全面的 ACID 合規性
+* 分割資料表可以使用 LIST、HASH、RANGE 和 SET 等分割方法
+* 支援兩種不同的字元/字串型別：CHAR 和 VARCHAR
+* 只提供資料表層次的鎖定
+* 資料表 view 的選項較少
+* 有限的儲存引擎參數調整
+* 管理工具非常強大
+* 兩種備份機制：mysqlhotcopy 和 mysqldump
+* 在大量使用時，經驗上明顯會感受到性能下降。
+* 在效能方面，沒有提供什麼最佳化的方式
+* 可靠性的問題
+* 與其他資料庫系統相比，安全性有限。
+* 專為事務性工作負載而設計，因此不適合分析工作負載
 
 ## MS SQL Server
 
