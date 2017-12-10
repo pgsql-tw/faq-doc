@@ -79,16 +79,16 @@
 * Replication is poorly-implemented
 * Not well-suited for low-concurrency projects
 
-## So, Which Should You Use?
+## 那麼，你應該使用哪個？
 
-As you can no doubt tell, each of the database tools we’ve profiled here is vastly different in terms of functionality and design focus. The question of which is the right choice for you therefore depends on the type of project you plan to manage.
+毫無疑問，我們在這裡描述的每個資料庫工具在功能和設計方面都有很大的不同。因此，你選擇哪一個的問題取決於你計劃管理的應用類型。
 
-### You should use Oracle if…
+### 你應該使用 Oracle 如果...
 
-* You require flexibility in terms of transaction control
-* You plan to host a large database
-* You require a high degree of scalability
-* You want your database to be platform-independent
+* 你在交易安全控制方面需要更多彈性
+* 你計劃管理一個大型資料庫
+* 你需要高度的可擴展性
+* 你希望你的資料庫是與平台無關的
 
 ### 你應該使用 MySQL 如果…
 
@@ -97,19 +97,19 @@ As you can no doubt tell, each of the database tools we’ve profiled here is va
 * 你需要多重的資料複製
 * 你的專案只需要簡單的查詢，並且較少處理資料一致性的問題
 
-### You should use MS SQL Server if…
+### 你應該使用 MS SQL Server 如果...
 
-* You’re working in a .NET development environment.
-* Your database serves a large corporate/enterprise environment
-* You’re processing workloads rather than developing applications
-* You require fine-tuned control over your database.
+* 你正在 .NET 開發環境中工作。
+* 你的資料庫服務於大型的企業環境
+* 你關心的是負載量而不是開發應用程式
+* 你需要對資料庫進行微調。
 
-### You should use DB2 if…
+### 你應該使用 DB2 如果...
 
-* Your company already maintains an in-house DB2 Installation
-* You wish to federate data from multiple sources
-* You need to be able to access data at high speed
-* Performance optimization is extremely important to your project
+* 你的公司已經在內部建置了一個 DB2 環境
+* 你希望串接來自多個來源的資料
+* 你需要能夠高速存取資料
+* 效能最佳化對你的專案非常重要
 
 ### 你應該使用 PostgreSQL 如果…
 
