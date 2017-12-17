@@ -39,17 +39,17 @@
 
 ## MS SQL Server
 
-* Closed-source, aimed at corporate/enterprise environments.
-* Offers full support for common table expressions
-* Requires a deeper understanding of databases/database configuration than other tools
-* Can fine-tune security features, such as who can run each stored procedure, who can access data, etc.
-* Utilizes an engine that’s slightly slower and resource-heavy, but fully ACID compliant.
-* Extremely comprehensive reporting system/storage customization
-* High degree of control over transactions and procedures
-* Community is not terribly active, not as much support online as MySQL.
-* Offers more than simple database functionality through a suite of tools: an ETL tool, analytical DBMS, relational DBMS, and reports server.
-* Schema changes do not lock tables.
-* Relatively high resource footprint
+* 封閉原始碼，目標為公司或企業的環境。
+* 對通用的資料表表示式提供全面的支持
+* 需要比其他工具更深入地理解有關於資料庫本身及資料庫的配置方式
+* 可以微調安全功能，例如誰可以執行每個自訂函數，或誰可以存取資料等
+* 使用稍慢、資源重的資料庫引擎，但完全符合ACID標準。
+* 極其全面的回報系統及儲存引擎自訂化
+* 高度的交易安全和程序控制
+* 社群不是非常活躍，沒有像 MySQL 那樣線上支援。
+* 透過一套工具提供簡單的資料庫功能：ETL工具，分析用 DBMS，關連式 DBMS和報表伺服器。
+* 資料庫架構更改不需要鎖定資料表。
+* 資源佔用相對較高
 
 ## DB2
 
