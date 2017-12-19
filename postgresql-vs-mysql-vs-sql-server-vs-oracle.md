@@ -53,16 +53,16 @@
 
 ## DB2
 
-* Closed-source. Enterprise version only available for a price
-* Schema-based table management
-* Does not support XML
-* Can only partition tables via sharding
-* No in-memory capabilities
-* Designed for relational integrity
-* More robust table/data management than MySQL
+* 閉源軟體。只有付費的企業版本
+* 基於 schema 的資料表管理
+* 不支援 XML
+* 只能通過分割資料表來分散
+* 沒有 In-memory 的功能
+* 為關連完整性而設計
+* 比MySQL更強大的資料表管理
 * Materialized table views
-* Lacks native character/string support
-* Multiple options for disaster recovery, availability, and scalability
+* 缺少內建的字元/字串支援
+* 多種災難復原選項，具可用性和可擴展性
 
 ## PostgreSQL
 
