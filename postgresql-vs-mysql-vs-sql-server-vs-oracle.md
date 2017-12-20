@@ -66,18 +66,18 @@
 
 ## PostgreSQL
 
-* Open-source
-* Adheres well to current SQL standards, and easier to learn as a result
-* Large footprint makes it ill-suited for read-heavy operations
-* Advanced business/location analytics features
-* Rich variety of data and character types
-* Fully ACID-compliant
-* Designed for reliability and data-integrity; developer-focused
-* Full-text search, support for powerful server-side procedural languages
-* Full support for advanced SQL features such as table expressions and window functions
-* Can efficiently join large numbers of tables
-* Replication is poorly-implemented
-* Not well-suited for low-concurrency projects
+* 開放原始碼
+* 堅持現有的 SQL 標準，並因此更容易學習
+* 佔用空間大，不適合讀取繁重的操作
+* 先進的商業及地理分析功能
+* 豐富多樣的資料型別和字元類型
+* 完全符合ACID標準
+* 專為可靠性和資料完整性而設計；以開發者為中心設計
+* 全文檢索，支持強大的伺服器端程式語言
+* 完全支持先進的 SQL 功能，如表格表示式和窗函數功能
+* 可以有效地進行大量資料表的交叉查詢
+* 複製功能並不是很完整
+* 不適合資料一致性較低的專案
 
 ## 那麼，你應該使用哪個？
 
