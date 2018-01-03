@@ -1,18 +1,16 @@
 # 資料庫中不使用外部鍵的 9 個理由 \(Referential Integrity Checks\)[^1]
 
-> 待譯
-
 最近我和幾位DBA和架構師爭論，他們對一些資料庫沒有外鍵感到震驚，並聲稱這是一個設計上的缺陷，不應該發生。如果是這樣，應該馬上予以修正。我想與此進行討論。我的經驗告訴我，很多資料庫（大多數我曾經使用的）不包含外部鍵，並不一定是壞事。在這篇文章中，我想把重點放在為什麼它是這樣的原因。
 
 ## 為什麼這會是一個問題？ {#toc_0}
 
 ### 1. 潛在的資料完整性問題，當然
 
-The obvious problem with the lack of foreign keys is that a database can't enforce referential integrity and if it wasn't taken care of properly at the higher level then this might lead to inconsistent data \(child rows without corresponding parent rows\).
+缺少外鍵的明顯問題是資料庫不能強制處理引用的完整性，如果在上層應用沒有正確處理，則可能會導致資料不一致（子資料列沒有相對應的父資料列）。
 
 ### 2. 資料表關連性不清楚
 
-Another, less visible, negative effect of lack of foreign keys in a database is that people who don't know the schema have a hard time finding the right tables and figuring out table relations. This may lead to[serious problems](https://dataedo.com/blog/2-common-sql-join-traps-with-test-queries)with querying and reporting from the database.
+資料庫中缺少外部鍵另一個不太明顯的負面影響是，不了解該資料模式的人很難找到正確的資料表並找出資料表的關連。這可能會導致嚴重的資料庫查詢和報表問題。[^2]
 
 ## 為什麼資料庫不需要有外部鍵？ {#toc_1}
 
@@ -69,4 +67,6 @@ I hope I managed to present sensible reasons why foreign keys aren't used as wid
 ---
 
 [^1]:  [9 Reasons Why There Are No Foreign Keys in Your Database \(Referential Integrity Checks\)](https://dataedo.com/blog/why-there-are-no-foreign-keys-in-your-database-referential-integrity-checks)
+
+[^2]:  [Common SQL Join Traps \(with Test Queries\)](https://dataedo.com/blog/2-common-sql-join-traps-with-test-queries)
 
