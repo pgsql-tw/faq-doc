@@ -14,13 +14,17 @@
 
 ## 為什麼資料庫不需要有外部鍵？ {#toc_1}
 
-Let's have a look at the reasons why databases don't have foreign keys. But first, a short**disclaimer**\(because article sparkled some controversy on LinkedIn groups\):
+讓我們來看看資料庫不用外部鍵的原因。但首先，一個簡短的免責聲明（因為文章引發了一些關於 LinkedIn 群組的爭議）：
 
-Reasons presented below are**in no way encouragement not to use foreign key constraints**in the databases. It is merely a collection of reasons I was able to find in various sources \(internet forums mostly\) on why many developers, architects or vendors do not use them. I personally \(and many other experienced database professionals\) advise to use them wherever you can \(where they are not causing more problems than they solve\). I leave you decision which of those reasons actually make a good case. More about problems lack of FKs cause in another article.
+> 因為是免責聲明，所以保留原文，僅就大意翻譯。
+
+Reasons presented below are **in no way encouragement not to use foreign key constraints **in the databases. It is merely a collection of reasons I was able to find in various sources \(internet forums mostly\) on why many developers, architects or vendors do not use them. I personally \(and many other experienced database professionals\) advise to use them wherever you can \(where they are not causing more problems than they solve\). I leave you decision which of those reasons actually make a good case. More about problems lack of FKs cause in another article.
+
+下面的理由絕對不是鼓勵不要在資料庫中使用外部鍵限制條件。這僅僅是我在各種管道（主要是網際網路論壇）能找到的許多開發人員、系統架構師或服務供應商為什麼不使用它們的原因。我個人（和許多其他經驗豐富的資料庫專家）建議在任何可能的地方使用它們（不會導致更多衍生的問題）。我讓你做決定，其中那些原因實際上是一個很好的例子。 在另一篇文章中更多關於缺乏外部鍵的問題。
 
 ### 1. 效能
 
-Having active foreign keys on tables improves data quality but hurts performance of insert, update and delete operations. Before those tasks database needs to check if it doesn't violate data integrity. This is a reason why some architects and DBAs give up on foreign keys at all. This is especially the case in data warehouses and analytical databases that do not process data in a transactional manner \(one row at a time\) but in bulk. And performance is everything in data warehousing and business intelligence.
+在資料表上擁有有意義的外部鍵可以提高資料品質，但會影響插入資料、更新資料和刪除資料操作的效能。在這些任務之前，資料庫需要檢查它是否違反資料完整性。這也就是為什麼一些系統架構師和 DBA 完全放棄外部鍵的原因。資料倉儲和分析資料庫尤其如此，這些資料倉儲和分析資料庫不以交易方式（一次一個資料列）處理資料，而是批量處理資料。效能是資料倉儲和智慧商業的一切。
 
 ### 2. 老舊資料
 
