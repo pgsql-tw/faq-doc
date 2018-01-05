@@ -1,18 +1,18 @@
 # Replication 備忘錄[^1]
 
-So many types of replication, so little time! What kind of PostgreSQL replication should you use?
+如此多的 Replication 類型，不過時間不多！ 你應該使用什麼樣的 PostgreSQL Replication 呢？
 
-## I want a standby server to take over if the primary fails.
+## 如果主服務器出現故障，我想要一個備用服務器來接管。
 
-Use[streaming replication](https://www.postgresql.org/docs/current/static/warm-standby.html#STREAMING-REPLICATION).
+請使用 [streaming replication](https://www.postgresql.org/docs/current/static/warm-standby.html#STREAMING-REPLICATION)。
 
-## I want to do read-only queries for load balancing.
+## 我想要做唯讀查詢的負載平衡。
 
-Use streaming replication, but be aware that the replica receiving the queries may fall behind the primary.
+使用 streaming replication，但請注意，接收查詢的副本主機可能落後於主節點。
 
-## I want to replicate over a slow or unreliable network connection.
+## 我想在一個緩慢或不可靠的網絡連線進行複寫。
 
-Use[WAL Shipping](https://www.postgresql.org/docs/current/static/warm-standby.html).
+請使用 [WAL Shipping](https://www.postgresql.org/docs/current/static/warm-standby.html).
 
 ## I want to upgrade from before 9.4 to 9.4 or higher.
 

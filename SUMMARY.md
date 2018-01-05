@@ -12,5 +12,5 @@
 * [PostgreSQL vs MySQL vs SQL Server vs Oracle](postgresql-vs-mysql-vs-sql-server-vs-oracle.md)
 * [9 Reasons Why There Are No Foreign Keys in Your Database \(Referential Integrity Checks\)](9-reasons-why-there-are-no-foreign-keys-in-your-database-referential-integrity-checks.md)
 * [PostgreSQL 支援哪些平台呢？](what-platforms-does-postgresql-support.md)
-* [A Replication Cheat-Sheet](a-replication-cheat-sheet.md)
+* [Replication 備忘錄](a-replication-cheat-sheet.md)
 
