@@ -68,7 +68,7 @@
 
 你可能不會。 它不支援主要的 PostgreSQL 資料型別，如 TIMESTAMP WITH TIME ZONE。
 
-## 我想同時使用 streamming replication 和 logical replication。
+## 我想同時使用 streaming replication 和 logical replication。
 
 這是可能的，但是這個作法的外圍還有很多複雜性，如果你的主要工作失敗，如何成功地進行故障切換。
 
