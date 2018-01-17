@@ -14,30 +14,28 @@
 
 請使用 [WAL Shipping](https://www.postgresql.org/docs/current/static/warm-standby.html).
 
-## I want to upgrade from before 9.4 to 9.4 or higher.
+## 我想從 9.4 之前的版本升級到 9.4 或更新版本。
 
-Use[Slony](http://www.slony.info/),[Londiste](https://wiki.postgresql.org/wiki/SkyTools), or[Bucardo](https://bucardo.org/Bucardo/).
+請使用 [Slony](http://www.slony.info/), [Londiste](https://wiki.postgresql.org/wiki/SkyTools), 或 [Bucardo](https://bucardo.org/Bucardo/).
 
-## I want to upgrade from 9.4 or later.
+## 我想從 9.4 或更新版本升級。
 
-Use[pglogical](https://www.2ndquadrant.com/en/resources/pglogical/).
+請使用 [pglogical](https://www.2ndquadrant.com/en/resources/pglogical/).
 
-## I want to consolidate multiple servers down to a single data warehouse, or only replicate some tables/databases/etc.
+## 我想整合多個伺服器到一個單一的資料倉庫，或只複製一些資料表/資料庫/等等。
 
-1. If you are on 9.3 or earlier, use Slony, Bucardo, or Londiste. \(But you should probably upgrade first.\)
-2. If you are on 9.4, 9.5, or 9.6, use pglogical.
-3. If you are on 10, use
-   [built-in logical replication](https://www.postgresql.org/docs/current/static/logical-replication.html)
-   .
+1. 如果你在 9.3 或更早版本，請使用 Slony、Bucardo 或 Londiste。 （但是你應該先升級吧。）
+2. 如果你在 9.4、9.5 或 9.6，請使用 pglogical。
+3. 如果你是版本 10，請使用內建的 logical replication。
 
-## I want to only replicate some columns in a table
+## 我只想複製資料表中的一些資料列
 
-1. If you are on 9.3 or earlier, use Slony.
-2. If you are on 9.4 or later, use pglogical.
+1. 如果你在 9.3 或更早版本，請使用 Slony。
+2. 如果你在 9.4 或更新版本，使用 pglogical。
 
-## I want to replicate tables that do not have a primary \(or other unique\) key.
+## 我想複製沒有主鍵或其他唯一鍵的資料表。
 
-Upgrade to version 10 and use built-in logical replication.
+升級到版本 10 並使用內建的 logical replication。
 
 ## Should I use Slony, Bucardo, or Londiste?
 
