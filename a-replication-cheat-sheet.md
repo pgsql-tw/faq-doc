@@ -37,44 +37,44 @@
 
 升級到版本 10 並使用內建的 logical replication。
 
-## Should I use Slony, Bucardo, or Londiste?
+## 我應該使用 Slony, Bucardo, 或 Londiste 嗎？
 
-1. Slony will have better overall performance than Bucardo or Londiste.
-2. Slony requires C-level extensions to be installed.
-3. Bucardo and Londiste are \(somewhat\) easier to install and administer.
-4. Bucardo and Londiste are in Perl and Python, respectively, if you really strongly care about what language the tool use.
+1. Slony 整體表現上比 Bucardo 或 Londiste 有更好。
+2. Slony 需要安裝 C-level 的延伸套件。
+3. Bucardo 和 Londiste 更容易安裝和管理。
+4. Bucardo 和 Londiste 分別使用 Perl 和 Python，如果你真的很關心這些工具使用什麼語言的話。
 
-## I need multi-master, where two servers can both take writes and replicate to each other.
+## 我需要多個主要主機，其中兩個伺服器可以互相寫入和複製對方。
 
-Use Bucardo.
+請使用 Bucardo.
 
-## I want an Amazon PostgreSQL RDS server to be the target for logical replication.
+## 我希望 Amazon PostgreSQL RDS 伺服器作為邏輯複製的目標。
 
-Use Bucardo or Londiste.
+請使用 Bucardo 或 Londiste.
 
-## I want to replicate from RDS to a non-RDS database.
+## 我想從 RDS 複製到非 RDS 資料庫。
 
-No current way of doing this.
+目前沒有解決方案。
 
-## I want an RDS database to be the source for logical replication.
+## 我想要一個 RDS資料庫作為邏輯複製的來源。
 
-No current way of doing this.
+目前沒有解決方案。
 
-## Wait, the RDS documentation says it “supports logical replication”.
+## 等等，RDS 文件說它「supports logical replication」。
 
-It only supports the test plugin that PostgreSQL provides as part of the contrib/ modules, which doesn’t actually do replication.
+它只支援 PostgreSQL 作為 contrib / modules 的一部分提供的測試外掛元件，實際上它並沒有做複製。
 
-## I want to use Amazon’s Data Migration Service for PostgreSQL-to-PostgreSQL replication.
+## 我想使用 Amazon 的資料遷移服務來進行 PostgreSQL 到 PostgreSQL 的複製。
 
-You probably don’t. It doesn’t suport important PostgreSQL types, like`TIMESTAMP WITH TIME ZONE`.
+你可能不會。 它不支援主要的 PostgreSQL 資料型別，如 TIMESTAMP WITH TIME ZONE。
 
-## I want to use both streaming and logical replication at the same time.
+## 我想同時使用 streamming replication 和 logical replication。
 
-This is possible, but there are complexities beyond the scope of this cheat-sheet as to how to successfully fail over if your primary goes down.
+這是可能的，但是這個作法的外圍還有很多複雜性，如果你的主要工作失敗，如何成功地進行故障切換。
 
-## This is awfully complicated.
+## 這真的非常複雜。
 
-Not really! The basic rule is to use streaming replication for high availability, and logical replication for data warehousing or other data distribution problems. The rest is all details!
+不是這樣的！ 基本規則是使用 streaming replication 實現高可用性，以 logical replication 解決資料倉庫或其他資料分散問題。其餘的都是細節！
 
 ---
 
