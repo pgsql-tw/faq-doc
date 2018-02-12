@@ -12,4 +12,5 @@
 * [PostgreSQL vs MySQL vs SQL Server vs Oracle](postgresql-vs-mysql-vs-sql-server-vs-oracle.md)
 * [PostgreSQL 支援哪些平台呢？](what-platforms-does-postgresql-support.md)
 * [Replication 備忘錄](a-replication-cheat-sheet.md)
+* [哪裡可以取得 PostgreSQL 呢？](where-can-i-get-postgresql.md)
 
