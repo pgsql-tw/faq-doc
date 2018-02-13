@@ -10,5 +10,5 @@
 
 ---
 
-[![](https://img.shields.io/badge/正體中文使用手冊-PostgreSQL.TW-blue.svg)](https://docs.postgresql.tw) [![](https://img.shields.io/badge/台灣使用者社群-PostgreSQL-blue.svg)](https://docs.postgresql.tw/)
+[![](https://img.shields.io/badge/正體中文使用手冊-PostgreSQL.TW-blue.svg)](https://docs.postgresql.tw) [![](https://img.shields.io/badge/台灣使用者社群-PostgreSQL-blue.svg)](https://postgresql.tw/)
 
