@@ -1,20 +1,20 @@
 # PostgreSQL 權限管理，你應該知道的事[^1]
 
-User management within[PostgreSQL](https://severalnines.com/product/clustercontrol/for_postgresql)can be tricky. Typically new users are managed, in concert, within a couple of key areas in the environment. Oftentimes, privileges are perfect on one front, yet configured incorrectly on the other. This blog post will provide practical 'Tips and Tricks' for a user or role, as we will come to know it, setup within PostgreSQL.
+PostgreSQL 中的使用者管理有時候非常棘手。通常情況下，新使用者會在環境中的幾個關鍵區域內一同管理。通常，權限在某些方面是完美的，但在某些方面的問題是設定不正確。這篇文章將為使用者或角色提供實用的「提示和技巧」，我們將會讓你了解它，並在 PostgreSQL 中進行設定。
 
-The subject areas we will focus on are:
+在這裡我們關注的主題是：
 
-* PostgreSQL's Take on Roles
+* PostgreSQL 賦予 Role （角色）的責任
 
-You will learn about roles, role attributes, best practices for naming your roles, and common role setups.
+您將了解角色、角色屬性、命名角色的最佳實作以及常見角色設定。
 
-* The pg\_hba.conf file
+* pg\_hba.conf 設定檔
 
-In this section we will look at one of the key files and its settings, for client-side connections and communication with the server.
+在本節中，我們將看看其中一個關鍵設定檔及其設定，用於用戶端連接和與伺服器的通訊。
 
-* Database, Table, and Column level privileges and restrictions.
+* 資料庫、資料表和欄位層級的權限和限制。
 
-Looking to configure roles for optimal performance and usage? Do your tables contain sensitive data, only accessible to privileged roles? Yet with the need to allow different roles to perform limited work? These questions and more will be exposed in this section.
+希望設定角色以獲得最佳效能和使用率？你的資料表是否包含敏感資料，只有特權角色才能存取？但是，是否需要允許不同的角色執行限制性的工作？這些問題和更多內容將在本節中說明。
 
 ## PostgreSQL's Take on Roles - What is a 'Role' and how to create one?
 
@@ -103,8 +103,8 @@ You can verify these set attributes, by checking thepg\_rolecatalog. Two columns
 
 Confirm with a similarSELECTquery.
 
-| 12345 | `postgres=#SELECTrolcreaterole, rolcreatedbFROMpg_rolesWHERErolname ='log_user';rolcreaterole | rolcreatedb---------------+-------------t | t(1 row)` |
-| :--- | :--- |
+| 12345 | \`postgres=\#SELECTrolcreaterole, rolcreatedbFROMpg\_rolesWHERErolname ='log\_user';rolcreaterole | rolcreatedb---------------+-------------t | t\(1 row\)\` |
+| :--- | :--- | :--- | :--- |
 
 
 ClusterControl
@@ -121,8 +121,8 @@ Two available methods are the psql\ducommand or selecting from thepg\_rolescatal
 
 Here they both are in use.
 
-| 12345678910111213 | `postgres=> \duListofrolesRolename| Attributes | Memberof------------+------------------------------------------------------------+-----------log_user |Createrole,CreateDB | {}nolog_user | Cannot login | {}postgres=>SELECTrolnameFROMpg_roles;rolname----------------------nolog_userlog_user(2rows)` |
-| :--- | :--- |
+| 12345678910111213 | \`postgres=&gt; \duListofrolesRolename | Attributes | Memberof------------+------------------------------------------------------------+-----------log\_user | Createrole,CreateDB | {}nolog\_user | Cannot login | {}postgres=&gt;SELECTrolnameFROMpg\_roles;rolname----------------------nolog\_userlog\_user\(2rows\)\` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 
 #### Logging in
@@ -164,8 +164,8 @@ Relevant examples of this relationship are included as this section progresses.
 
 To locate yourpg\_hba.conffile, issue a similarSELECTquery, on thepg\_settingsVIEW. You must be logged in as aSUPERUSERto query thisVIEW.
 
-| 123456 | `postgres=#SELECTname, settingFROMpg_settingsWHEREnameLIKE'%hba%';name| setting----------+-------------------------------------hba_file | /etc/postgresql/10/main/pg_hba.conf(1 row)` |
-| :--- | :--- |
+| 123456 | \`postgres=\#SELECTname, settingFROMpg\_settingsWHEREnameLIKE'%hba%';name | setting----------+-------------------------------------hba\_file | /etc/postgresql/10/main/pg\_hba.conf\(1 row\)\` |
+| :--- | :--- | :--- | :--- |
 
 
 Thepg\_hba.conffile contains records specifying one of seven available formats for a given connection request. See the full spectrum[here](https://www.postgresql.org/docs/10/static/auth-pg-hba-conf.html).
@@ -217,8 +217,8 @@ Note: Sincepasswordis sent in clear text, this should not be used in untrusted e
 
 Let's look at three interesting columns from thepg\_hba\_file\_rulesVIEWwith the below query. Again your role needs the SUPERUSER attribute to query thisVIEW.
 
-| 12345678 | `postgres=#SELECTdatabase, user_name, auth_methodpostgres-#FROMpg_hba_file_rulespostgres-#WHERECAST(user_nameASTEXT)LIKE'%log_user%';database| user_name | auth_method----------+--------------+-------------{all} | {nolog_user} |password{all} | {log_user} |password(2rows)` |
-| :--- | :--- |
+| 12345678 | \`postgres=\#SELECTdatabase, user\_name, auth\_methodpostgres-\#FROMpg\_hba\_file\_rulespostgres-\#WHERECAST\(user\_nameASTEXT\)LIKE'%log\_user%';database | user\_name | auth\_method----------+--------------+-------------{all} | {nolog\_user} | password{all} | {log\_user} | password\(2rows\)\` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 
 We can see identical information from the lines provided above found in thepg\_hba.conffile as we can from the accompanying query. At first glance, it looks as if both roles can log in.
@@ -275,7 +275,7 @@ The syntax would be:
 
 To know where yourdatadiris, you can query thepg\_settingssystemVIEW, if logged in as aSUPERUSERwith a similarSELECTquery as below.
 
-| 12345 | `postgres=#SELECTsettingFROMpg_settingsWHEREname='data_directory';setting          -----------------------------/var/lib/postgresql/10/main(1 row)` |
+| 12345 | `postgres=#SELECTsettingFROMpg_settingsWHEREname='data_directory';setting          -----------------------------/var/lib/postgresql/10/main(1 row)` |
 | :--- | :--- |
 
 
@@ -351,8 +351,8 @@ However, db\_user is required to issueSELECTqueries. How can we limit this roles
 
 First let's examine the exact syntax found in the[PostgreSQL GRANT command](https://www.postgresql.org/docs/10/static/sql-grant.html)docs, at the table level.
 
-| 1234 | `GRANT{ {SELECT|INSERT|UPDATE|REFERENCES} ( column_name [, ...] )[, ...] |ALL[PRIVILEGES] ( column_name [, ...] ) }ON[TABLE] table_name [, ...]TOrole_specification [, ...] [WITHGRANTOPTION]` |
-| :--- | :--- |
+| 1234 | \`GRANT{ {SELECT | INSERT | UPDATE | REFERENCES} \( column\_name \[, ...\] \)\[, ...\] | ALL\[PRIVILEGES\] \( column\_name \[, ...\] \) }ON\[TABLE\] table\_name \[, ...\]TOrole\_specification \[, ...\] \[WITHGRANTOPTION\]\` |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 
 
 Next, we implement the requirements set forth for role db\_user, applying specific syntax.
@@ -373,8 +373,8 @@ Column sensitive\_info is included in this query. Therefore, no records are retu
 
 But db\_user canSELECTthe allowable columns
 
-| 12345678 | `trial=>SELECTid, first_name, last_nametrial->FROManother_workload;id | first_name | last_name-----+------------+-----------10 | John | Morris191 | Jannis | Harper2 | Remmy | Rosebuilt(3rows)` |
-| :--- | :--- |
+| 12345678 | \`trial=&gt;SELECTid, first\_name, last\_nametrial-&gt;FROManother\_workload;id | first\_name | last\_name-----+------------+-----------10 | John | Morris191 | Jannis | Harper2 | Remmy | Rosebuilt\(3rows\)\` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 
 
 That works just fine.
@@ -419,8 +419,6 @@ Through this blog post's provided examples, you should have a better understandi
 1. Creating a role with specific attributes.
 2. Setting a workable connection between the client and server, allowing roles login access to databases.
 3. Highly customizing your roles to meet individual requirements for database, table, and column level access by implementing necessary attributes.
-
-
 
 [^1]: [PostgreSQL Privileges & User Management - What You Should Know](https://severalnines.com/blog/postgresql-privileges-user-management-what-you-should-know)
 
