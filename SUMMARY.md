@@ -14,5 +14,6 @@
 * [PostgreSQL 支援哪些平台呢？](what-platforms-does-postgresql-support.md)
 * [Replication 備忘錄](a-replication-cheat-sheet.md)
 * [哪裡可以取得 PostgreSQL 呢？](where-can-i-get-postgresql.md)
-* [忘記密碼怎麼辦？](forgot-the-password.md)
+
+
 
