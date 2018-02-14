@@ -1,6 +1,7 @@
 # Summary
 
 * [常見問題](README.md)
+* [忘記密碼怎麼辦？](forgot-the-password.md)
 * [PostgreSQL 資料庫可以有多大？](limitation.md)
 * [什麼是 PostgreSQL？ 怎麼發音？Postgres 又是什麼？](what-is-postgresql.md)
 * [誰控制著 PostgreSQL？](who-controls-postgresql.md)
@@ -13,7 +14,5 @@
 * [PostgreSQL 支援哪些平台呢？](what-platforms-does-postgresql-support.md)
 * [Replication 備忘錄](a-replication-cheat-sheet.md)
 * [哪裡可以取得 PostgreSQL 呢？](where-can-i-get-postgresql.md)
-* [Become a PostgreSQL DBA](become-a-postgresql-dba.md)
-  * [PostgreSQL 權限管理，你應該知道的事](become-a-postgresql-dba/postgresql-privileges-and-user-management-what-you-should-know.md)
 * [忘記密碼怎麼辦？](forgot-the-password.md)
 

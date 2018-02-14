@@ -52,9 +52,9 @@
 
    `sudo /etc/init.d/postgresql restart`
 
+9. 用新的密碼登入，並且記好你的密碼
+
 ---
-
-
 
 [^1]:  [postgresql - I forgot the password I entered during postgres installation - Stack Overflow](https://stackoverflow.com/questions/10845998/i-forgot-the-password-i-entered-during-postgres-installation)
 
