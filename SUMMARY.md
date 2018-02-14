@@ -15,4 +15,5 @@
 * [哪裡可以取得 PostgreSQL 呢？](where-can-i-get-postgresql.md)
 * [Become a PostgreSQL DBA](become-a-postgresql-dba.md)
   * [PostgreSQL 權限管理，你應該知道的事](become-a-postgresql-dba/postgresql-privileges-and-user-management-what-you-should-know.md)
+* [忘記密碼怎麼辦？](forgot-the-password.md)
 
