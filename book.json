@@ -1,3 +1,10 @@
 {
-    "plugins": [ "theme-faq", "notocjk" ]
+    "plugins": [ "theme-faq", "notocjk", "feed" ],
+    "pluginsConfig": {
+        "feed": {
+            "hostname": "https://faq.postgresql.tw",
+            "title": "PostgreSQL 常見問題",
+            "author": "PostgreSQL 台灣使用者社群"
+        }
+    }
 }
