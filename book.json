@@ -1,10 +1,8 @@
 {
-    "plugins": [ "theme-faq", "notocjk", "feed" ],
+    "plugins": [ "theme-faq", "notocjk", "page-toc" ],
     "pluginsConfig": {
-        "feed": {
-            "hostname": "https://faq.postgresql.tw",
-            "title": "PostgreSQL 常見問題",
-            "author": "PostgreSQL 台灣使用者社群"
-        }
-    }
+     "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4 .markdown-section h5",
+     "position": "before-first",
+     "showByDefault": true
+  }
 }
