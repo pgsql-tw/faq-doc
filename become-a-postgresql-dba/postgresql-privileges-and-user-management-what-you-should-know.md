@@ -16,32 +16,32 @@ PostgreSQL 中的使用者管理有時候非常棘手。通常情況下，新使
 
 希望設定角色以獲得最佳效能和使用率？你的資料表是否包含敏感資料，只有特權角色才能存取？但是，是否需要允許不同的角色執行限制性的工作？這些問題和更多內容將在本節中說明。
 
-## PostgreSQL's Take on Roles - What is a 'Role' and how to create one?
+## PostgreSQL 的 Role - 什麼是「Role」以及如何建立 Role？
 
-Permissions for database access within PostgreSQL are handled with the concept of a role, which is akin to a user. Roles can represent groups of users in the PostgreSQL ecosystem as well.
+PostgreSQL 中的資料庫存取權限是通過角色（Role）的概念處理的，類似於使用者（user）。但角色也可以代表 PostgreSQL 生態系統中的群組（group）。
 
-PostgreSQL establishes the capacity for roles to assign privileges to database objects they own, enabling access and actions to those objects. Roles have the ability to grant membership to another role. Attributes provide customization options, for permitted client authentication.
+PostgreSQL 賦予角色的能力來為他們擁有的資料庫物件分配權限，從而啟用對這些物件的存取和操作。角色有能力授予其他角色的使用者資格。為允許的用戶端驗證身份，也提供了自訂選項的屬性。
 
-Attributes for roles through theCREATE ROLEcommand, are available in the[official PostgreSQL documentation.](https://www.postgresql.org/docs/10/static/sql-createrole.html)
+PostgreSQL 文件中提供了透過 [CREATE ROLE](https://www.postgresql.org/docs/10/static/sql-createrole.html) 指令取得角色的屬性。
 
-Below, are those attributes you will commonly assign when setting up a new role. Most of these are self-explanatory. However, a brief description is provided to clear up any confusion along with example uses.
+以下是你在設定新角色時通常會分配的屬性，它們大部分都是不需要特別指定的。然而，這裡提供了一個簡短的描述來清除任何混淆以及範例用法。
 
-SUPERUSER- A databaseSUPERUSERdeserves a word of caution. Bottom line, roles with this attribute can create anotherSUPERUSER. Matter of fact, this attribute is required to create anotherSUPERUSERrole. Since roles with this attribute bypass all permission checks, grant this privilege judiciously.
+SUPERUSER - 資料庫的 SUPERUSER 必須要謹慎。 最基本的，具有此屬性的角色可以建立另一個 SUPERUSER。事實上，建立另一個 SUPERUSER 角色這個屬性是必備的。由於具有此屬性的角色會繞過所有的權限檢查，因此應明智地授予此權限。
 
-CREATEDB- Allows the role to create databases.
+CREATEDB - 允許角色建立資料庫。
 
-CREATEROLE- With this attribute, a role can issue theCREATE ROLEcommand. Hence, create other roles.
+CREATEROLE - 使用此屬性，角色可以發出 CREATE ROLE 指令。也就是，建立其他角色。
 
-LOGIN- Enables the ability to login. A role name with this attribute can be used in the client connection command. More details on this attribute with forthcoming examples.
+LOGIN - 啟用登入的功能。用戶端連線命令中可以使用具有此屬性的角色名稱。有關此屬性的更多詳細訊息，會在後續的例子中說明。
 
-Certain attributes have an explicit polar opposite named command and typically is the default when left unspecified.
+某些屬性具有功能之間相反的命令，並且通常在未指定時是預設值。
 
-e.g.  
-SUPERUSER\|NOSUPERUSER  
-CREATEROLE\|NOCREATEROLE  
-LOGIN\|NOLOGIN
+例如：  
+SUPERUSER \| NOSUPERUSER  
+CREATEROLE \| NOCREATEROLE  
+LOGIN \| NOLOGIN
 
-Let's look at some of these attributes in action for various configurations you can set up to get going.
+讓我們來看看這些屬性在實際操作中可以設定的各種配置方式。
 
 #### Creating And Dropping Roles
 
