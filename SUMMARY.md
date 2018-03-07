@@ -1,6 +1,8 @@
 # Summary
 
 * [常見問題](README.md)
+* [我在哪裡可以獲得支援？](where-can-i-get-support.md)
+* [最新版本是什麼？](what-is-the-most-recent-release.md)
 * [PostgreSQL 資料庫可以有多大？](limitation.md)
 * [忘記密碼怎麼辦？](forgot-the-password.md)
 * [什麼是 PostgreSQL？ 怎麼發音？Postgres 又是什麼？](what-is-postgresql.md)
@@ -13,7 +15,6 @@
 * [PostgreSQL vs MySQL vs SQL Server vs Oracle](postgresql-vs-mysql-vs-sql-server-vs-oracle.md)
 * [PostgreSQL 支援哪些平台呢？](what-platforms-does-postgresql-support.md)
 * [Replication 備忘錄](a-replication-cheat-sheet.md)
-* [哪裡可以取得 PostgreSQL 呢？](where-can-i-get-postgresql.md)
-* [最新版本是什麼？](what-is-the-most-recent-release.md)
-* [我在哪裡可以獲得支援？](where-can-i-get-support.md)
+
+
 
