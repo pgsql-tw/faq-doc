@@ -1,4 +1,4 @@
-# 我在哪裡可以獲得支援？[^2]
+# 我在哪裡可以獲得支援？[^1]
 
 PostgreSQL社群透過電子郵件提供許多用戶的幫助。訂閱電子郵件列表的主要網站是[http://www.postgresql.org/community/lists/](http://www.postgresql.org/community/lists/)。
 
@@ -10,7 +10,5 @@ PostgreSQL社群透過電子郵件提供許多用戶的幫助。訂閱電子郵�
 
 ---
 
-[FAQ - PostgreSQL wiki](https://wiki.postgresql.org/wiki/FAQ#Where_can_I_get_support.3F)
-
-[^1]: FAQ - PostgreSQL wiki
+[^1]: [FAQ - PostgreSQL wiki](https://wiki.postgresql.org/wiki/FAQ#Where_can_I_get_support.3F)
 
