@@ -43,12 +43,14 @@ LOGIN \| NOLOGIN
 
 讓我們來看看這些屬性在實際操作中可以設定的各種配置方式。
 
-#### Creating And Dropping Roles
+#### 建立和移除角色
 
-Creating a role is relatively straightforward. Here's a quick example:
+建立一個角色相對比較直覺。這裡有個簡單的例子：
 
-| 123 | `postgres=#CREATEROLE $money_man;ERROR: syntax erroratornear"$"LINE 1:CREATEROLE $money_man;` |
-| :--- | :--- |
+> > postgres=\# CREATEROLE $money\_man;  
+> > ERROR: syntax error at or near "$"  
+> > LINE 1: CREATEROLE $money\_man;
+
 
 
 What went wrong there? Turns out, role names cannot start with anything other than a letter.
