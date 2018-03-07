@@ -10,9 +10,9 @@ JDBC 在查詢資料時，預設會取回所有的資料，所以如果你的資
 
 詳細說明請參閱 [PostgreSQL JDBC 使用手冊第 5 章](https://jdbc.postgresql.org/documentation/head/query.html)的內容。以下為該章的編譯內容[^1]：
 
-任何時候你想要將 SQL 查詢語句送到資料庫，你都需要一個 Statement 或 PreparedStatement。一旦你有一個 Statement 或 PreparedStatement 了，你可以就可以開始查詢。這將回傳一個 ResultSet 的實例，該實例包含全部的資料結果（請參閱「[以游標（cursor）取得結果](#以-cursor-取得結果)」一節以了解如何變更此行為）。 範例 1，「[在 JDBC 中進行一個簡單的查詢](#範例 1 在-jdbc-中進行一個簡單的查詢)」說明了這個過程。
+任何時候你想要將 SQL 查詢語句送到資料庫，你都需要一個 Statement 或 PreparedStatement。一旦你有一個 Statement 或 PreparedStatement 了，你可以就可以開始查詢。這將回傳一個 ResultSet 的實例，該實例包含全部的資料結果（請參閱「[以游標（cursor）取得結果](#cursor)」一節以了解如何變更此行為）。 範例 1，「[在 JDBC 中進行一個簡單的查詢](#ex1)」說明了這個過程。
 
-##### 範例 1. 在 JDBC 中進行一個簡單的查詢
+##### 範例 1. 在 JDBC 中進行一個簡單的查詢 {#ex1}
 
 這個範例將送出一個簡單的查詢並使用一個 Statement 來輸出每一個資料列的第一個欄位：
 
@@ -42,7 +42,7 @@ rs.close();
 st.close();
 ```
 
-### 以游標（cursor）取得結果
+### 以游標（cursor）取得結果 {#cursor}
 
 預設的情況下，驅動程式會一次取回查詢的所有結果。這對於大數據來說可能會不方便，因此 JDBC 驅動程式提供了將 ResultSet 放在資料庫游標上的方法，只提取少量的資料列。
 
