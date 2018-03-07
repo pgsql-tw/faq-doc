@@ -6,13 +6,13 @@
 
 簡單來說：
 
-JDBC 在查詢資料時，預設會取回所有的資料，所以如果你的資料量過大，且AP端的資源不足時，就可能會產生這個錯誤。
+JDBC 在查詢資料時，預設會取回所有的資料，所以如果你的資料量過大，且AP端的資源不足時，就可能會產生這個錯誤。許多人以為 next\(\) 就是在使用 cursor，其實不然。
 
-詳細說明，可參閱 [PostgreSQL JDBC 使用手冊第 5 章](https://jdbc.postgresql.org/documentation/head/query.html)的內容。以下內容摘錄自該章[^1]：
+詳細說明請參閱 [PostgreSQL JDBC 使用手冊第 5 章](https://jdbc.postgresql.org/documentation/head/query.html)的內容。以下該章的編譯內容[^1]：
 
-任何時候你想要將 SQL 查詢語句送到資料庫，你都需要一個 Statement 或PreparedStatement。一旦你有一個 Statement 或 PreparedStatement 了，你可以就可以開始查詢。這將回傳一個 ResultSet 的實例，該實例包含整個結果（請參閱「[以游標（cursor）取得結果](#以-cursor-取得結果)」一節以了解如何更改此行為）。 範例 1，「[在 JDBC 中進行一個簡單的查詢](#範例 1 在-jdbc-中進行一個簡單的查詢)」說明了這個過程。
+任何時候你想要將 SQL 查詢語句送到資料庫，你都需要一個 Statement 或PreparedStatement。一旦你有一個 Statement 或 PreparedStatement 了，你可以就可以開始查詢。這將回傳一個 ResultSet 的實例，該實例包含整個結果（請參閱「[以游標（cursor）取得結果](#以-cursor-取得結果)」一節以了解如何更改此行為）。 範例 1，「[在 JDBC 中進行一個簡單的查詢](#範例 1 在-jdbc-中進行一個簡單的查詢)」說明了這個過程。
 
-##### 範例 1. 在 JDBC 中進行一個簡單的查詢
+##### 範例 1. 在 JDBC 中進行一個簡單的查詢
 
 這個範例將送出一個簡單的查詢並使用一個 Statement 來輸出每一個資料列的第一個欄位：
 
@@ -84,7 +84,5 @@ st.close();
 
 ---
 
-
-
-[^1]:  [Chapter 5. Issuing a Query and Processing the Result](https://jdbc.postgresql.org/documentation/head/query.html)
+[^1]:  [Chapter 5. Issuing a Query and Processing the Result](https://jdbc.postgresql.org/documentation/head/query.html)
 
