@@ -48,39 +48,35 @@ LOGIN \| NOLOGIN
 建立一個角色相對比較直覺。這裡有個簡單的例子：
 
 ```
-postgres=\# CREATEROLE $money\_man;
+postgres=\# CREATE ROLE $money\_man;
 ERROR: syntax error at or near "$" 
-LINE 1: CREATEROLE $money\_man;
+LINE 1: CREATE ROLE $money\_man;
 ```
 
+哪裡裡出了什麼問題？事實上，角色的名稱不能以英文字母以外的任何其他字元開頭。
 
-What went wrong there? Turns out, role names cannot start with anything other than a letter.
+「把這個名字用雙引號括起來怎麼樣？」，我們來試試看：
 
-"What about wrapping the name in double quotes?" Let's see:
+postgres=\# CREATE ROLE "$money\_man";   
+CREATEROLE
 
-| 12 | `postgres=#CREATEROLE"$money_man";CREATEROLE` |
-| :--- | :--- |
+看起來可以，雖然可能不是一個好的方式。那麼名字中間有特殊字元如何？
 
+postgres=\# CREATE ROLE money$\_man;  
+CREATEROLE
 
-That worked, though probably not a good idea. How about a special character in the middle of the name?
+一樣沒問題。即使沒有雙引號，也不會回傳任何錯誤。
 
-| 12 | `postgres=#CREATEROLE money$_man;CREATEROLE` |
-| :--- | :--- |
+但我不會喜歡 $money\_man 的名稱結構。我決定放棄 $money\_man 並且重新開始。DROP ROLE 指令負責刪除角色。來使用它吧。
 
+postgres=\# DROP ROLE $money\_man;  
+ERROR: syntax error at or near "$"  
+LINE 1: DROP ROLE $money\_man;
 
-No problem there. Even without double quotes, no error was returned.
+又有 $money\_man 角色的另一個錯誤。 一樣，再使出雙引號吧。
 
-I'm just not fond of the name structure of $money\_man for a user. I'm dropping you $money\_man and starting afresh. TheDROP ROLEcommand takes care of removing a role. Here it is in use.
-
-| 123 | `postgres=#DROPROLE $money_man;ERROR: syntax erroratornear"$"LINE 1:DROPROLE $money_man;` |
-| :--- | :--- |
-
-
-And another error with the $money\_man role. Again, resorting to the double quotes it is.
-
-| 12 | `postgres=#DROPROLE"$money_man";DROPROLE` |
-| :--- | :--- |
-
+postgres=\# DROP ROLE "$money\_man";  
+DROPROLE
 
 #### The LOGIN privilege
 
