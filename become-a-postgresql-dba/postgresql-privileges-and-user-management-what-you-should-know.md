@@ -56,28 +56,28 @@ LINE 1: CREATE ROLE $money\_man;
 哪裡裡出了什麼問題？事實上，角色的名稱不能以英文字母以外的任何其他字元開頭。
 
 「把這個名字用雙引號括起來怎麼樣？」，我們來試試看：
-
+```
 postgres=\# CREATE ROLE "$money\_man";   
 CREATEROLE
-
+```
 看起來可以，雖然可能不是一個好的方式。那麼名字中間有特殊字元如何？
-
+```
 postgres=\# CREATE ROLE money$\_man;  
 CREATEROLE
-
+```
 一樣沒問題。即使沒有雙引號，也不會回傳任何錯誤。
 
 但我不會喜歡 $money\_man 的名稱結構。我決定放棄 $money\_man 並且重新開始。DROP ROLE 指令負責刪除角色。來使用它吧。
-
+```
 postgres=\# DROP ROLE $money\_man;  
 ERROR: syntax error at or near "$"  
 LINE 1: DROP ROLE $money\_man;
-
+```
 又有 $money\_man 角色的另一個錯誤。 一樣，再使出雙引號吧。
-
+```
 postgres=\# DROP ROLE "$money\_man";  
 DROPROLE
-
+```
 #### The LOGIN privilege
 
 Let's look at two different users, one with the LOGIN privilege and one without. I'll assign them passwords as well.
