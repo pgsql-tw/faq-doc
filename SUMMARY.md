@@ -16,8 +16,5 @@
 * [PostgreSQL vs MySQL vs SQL Server vs Oracle](postgresql-vs-mysql-vs-sql-server-vs-oracle.md)
 * [PostgreSQL 支援哪些平台呢？](what-platforms-does-postgresql-support.md)
 * [Replication 備忘錄](a-replication-cheat-sheet.md)
-
-
-
-
+* [Windows 中的 pgAdmin4 字太小怎麼辦？](how-to-increase-font-size-in-pgadmin-4-on-windows.md)
 
