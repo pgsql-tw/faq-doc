@@ -8,15 +8,18 @@
 
 ### 一、在啓動指令加入參數：
 
-`cd "c:\Program Files\PostgreSQL\9.6\pgAdmin 4\bin"`
-
-`.\pgAdmin4.exe -platform windows:dpiawareness=0`
+```
+cd "c:\Program Files\PostgreSQL\9.6\pgAdmin 4\bin"
+.\pgAdmin4.exe -platform windows:dpiawareness=0
+```
 
 或
 
 在捷徑按「內容」，修改「目標」，在後面加入：
 
-`-platform windows:dpiawareness=0`
+```
+-platform windows:dpiawareness=0
+```
 
 ### 二、設定 qt.conf：
 
@@ -24,15 +27,17 @@
 
 請使用**系統管理者權限**開啓 cmd
 
-`cd "c:\Program Files\PostgreSQL\9.6\pgAdmin 4\bin"`
-
-`notepad qt.conf`
+```
+cd "c:\Program Files\PostgreSQL\9.6\pgAdmin 4\bin"
+notepad qt.conf
+```
 
 內容加入：
 
-`[Platforms]`
-
-`WindowsArguments = dpiawareness=0`
+```
+[Platforms]
+WindowsArguments = dpiawareness=0
+```
 
 再重啓你的 pgAdmin 4 即可。
 
