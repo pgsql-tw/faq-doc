@@ -1,11 +1,10 @@
-# 忘記密碼怎麼辦？[^1]
+# 忘記密碼怎麼辦？
 
 **解決的辦法就是使用密碼以外的方式登入再給一個新的密碼。先決條件是你擁有該系統的管理者權限。**
 
 找到你的`pg_hba.conf`，可能會在`/etc/postgresql-9.1/pg_hba.conf`，像這樣的路徑下。
 
 1. `cd /etc/postgresql-9.1/`
-
 2. 先備份一下
 
    `cp pg_hba.conf pg_hba.conf-backup`
@@ -53,8 +52,4 @@
    `sudo /etc/init.d/postgresql restart`
 
 9. 用新的密碼登入，並且記好你的密碼
-
----
-
-[^1]:  [postgresql - I forgot the password I entered during postgres installation - Stack Overflow](https://stackoverflow.com/questions/10845998/i-forgot-the-password-i-entered-during-postgres-installation)
 

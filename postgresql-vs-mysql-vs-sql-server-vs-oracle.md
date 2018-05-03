@@ -1,4 +1,4 @@
-# PostGRESQL vs MySQL vs SQL Server vs Oracle：哪個資料庫是你的最佳選擇？[^1]
+# PostgreSQL vs MySQL vs SQL Server vs Oracle
 
 對於哪個 SQL 資料庫系統比較優秀，總是存在著爭議。PostgreSQL 和 MySQL 之間的真正區別是什麼？每個管理者都有自己的偏好，每個程式設計師都有自己獨特的程式處理方式。因此，如果您詢問五個不同的系統管理員，他們更喜歡哪個平台，那麼你會得到五個不同的答案。
 
@@ -120,8 +120,4 @@
 * 你的專案是以開發人員為中心的
 
 希望這些回答為這個問題提供了一個很好的基礎：PostgreSQL、MySQL 和其他更多資料庫之間有什麼差異？
-
----
-
-[^1]:  [PostGRESQL vs MySQL vs SQL Server vs Oracle: Which DBMS Is The Best Choice For You? \| Liberty Center One](https://www.libertycenterone.com/blog/postgresql-vs-mysql-vs-sql-server-vs-oracle/)
 

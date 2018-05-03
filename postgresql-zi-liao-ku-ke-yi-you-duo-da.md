@@ -1,4 +1,4 @@
-# PostgreSQL 資料庫可以有多大？[^1]
+# PostgreSQL 資料庫可以有多大？
 
 | **限制** | **範圍** |
 | :--- | :--- |
@@ -10,13 +10,7 @@
 | 資料表中最多可以有幾個欄位 | 250 - 1600 （與欄位型別有關） |
 | 資料表最多可以有幾個索引（Index） | 無限制 |
 
-* 最大資料表後來修正了宣告問題[^2]，所以在 10 之後的版本就不再受限於 32 TB 了。
+* 最大資料表後來修正了宣告問題，所以在 10 之後的版本就不再受限於 32 TB 了。
 * 額外再加上分割資料表（Partition Table）的支援，可以再進一步單一資料表的極限。
 * 大型資料表只代表可以「儲存」的資料量，不一定是可以「運算」的資料量，仍然要保持資料表在適當的大小。
-
----
-
-[^1]: [PostgreSQL: About](https://www.postgresql.org/about/)
-
-[^2]: [PostgreSQL Maximum Table Size](https://blog.2ndquadrant.com/postgresql-maximum-table-size/)
 

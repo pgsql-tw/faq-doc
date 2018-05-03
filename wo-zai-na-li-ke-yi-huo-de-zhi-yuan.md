@@ -1,4 +1,4 @@
-# 我在哪裡可以獲得支援？[^1]
+# 我在哪裡可以獲得支援？
 
 PostgreSQL社群透過電子郵件提供許多用戶的幫助。訂閱電子郵件列表的主要網站是[http://www.postgresql.org/community/lists/](http://www.postgresql.org/community/lists/)。
 
@@ -7,8 +7,4 @@ PostgreSQL社群透過電子郵件提供許多用戶的幫助。訂閱電子郵�
 主要的IRC頻道是Freenode上的\#postgresql \(irc.freenode.net\)。 台灣社群的討論社群在 Facebook Group 上，申請加入後即可參與討論。
 
 還有一些提供支援服務的公司名單可在 [http://www.postgresql.org/support/professional\_support](http://www.postgresql.org/support/professional_support)中找到。
-
----
-
-[^1]: [FAQ - PostgreSQL wiki](https://wiki.postgresql.org/wiki/FAQ#Where_can_I_get_support.3F)
 
